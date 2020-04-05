@@ -1,0 +1,115 @@
+
+/*** ESSENTIAL STYLES ***/
+.menu, .menu * {
+	margin:			0;
+	padding: 0;
+	list-style:		none;
+}
+
+.menu ul {
+	position:		absolute; /*must stay absolute */
+	top:			-999em;
+	width: 12em; /* left offset of submenus need to match (see below) */
+}
+.menu ul li {
+	width:			100%;
+	height: 40px;
+}
+.menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.menu li {
+	float:			left;
+	position:		relative;
+}
+.menu a {
+	display:		block;
+	position:		relative;
+}
+.menu li:hover ul,
+.menu li.sfHover ul {
+	left:			0;
+	top:			40px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.menu li:hover li ul,
+ul.menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.menu li li:hover ul,
+ul.menu li li.sfHover ul {
+	left:			12em; /* match ul width */
+	top:			0;
+}
+ul.menu li li:hover li ul,
+ul.menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.menu li li li:hover ul,
+ul.menu li li li.sfHover ul {
+	left:			12em; /* match ul width */
+	top:			0;
+}
+ul.menu{
+	position:absolute;
+	top:125px;
+	left:0px;
+	color:#132430;
+	border-top:#2F5677;
+	color:#FFF;
+	font-size:16px;
+	font-family:'PT Sans', arial;
+	background:#05263f;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(#05263f), to(#104870));
+background: -moz-linear-gradient(#05263f, #104870);
+background: linear-gradient(#05263f, #104870);
+-pie-background: linear-gradient(#05263f, #104870);
+	list-style:none;
+	-moz-border-radius: 4px; 
+	-webkit-border-radius: 4px; 
+	border-radius: 4px;
+	behavior: url(http://binghamtoncommunityorchestra.org/PIE.htc);
+	}
+	ul.menu li a {
+		padding:0px 34px;
+		line-height:45px;
+		color:#FFF;
+		font-size:16px;
+		text-transform : uppercase;
+	}
+		ul.menu li li a {
+		padding:10px 10px;
+		line-height:20px;
+		color:#FFF;
+		font-size:12px;
+		border-bottom : 1px solid #515151;
+		text-transform : none;
+	}
+	ul.menu li.act a, ul.menu li.sfHover a,
+	ul.menu li a:hover, ul.menu li.parent a, ul.menu li.current a{
+		background:#000;
+		color:#FFF;
+		text-decoration:none;
+			-moz-border-radius: 2px; 
+	-webkit-border-radius: 2px; 
+	border-radius: 2px;
+	behavior: url(http://binghamtoncommunityorchestra.org/PIE.htc);
+}
+	ul.menu li li a, ul.menu li.sfHover li a{
+	background-image : none;
+	background-color : #05263f;
+	color:#FFF;
+		text-decoration:none;
+}
+	ul.menu li li a:hover, ul.menu li li.active a{
+	background-image : none;
+	background-color : #104870;
+	color:#FFF;
+		text-decoration:none;
+}
+.sf-sub-indicator{
+background-color :transparent ;
+}
+ul.menu li a:hover .sf-sub-indicator, ul.menu li.sfHover a .sf-sub-indicator, ul.menu li.parent a .sf-sub-indicator, ul.menu li.act a .sf-sub-indicator {
+background-color :transparent;
+}

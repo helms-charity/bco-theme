@@ -1,0 +1,290 @@
+/* **************************************************** 
+
+ ______________________________________________________________
+|            |                                                 |
+| \  \ /  /  |    DESIGN + VentureWise {http://VentureWise.co} |
+|  \  \  /   |      DATE + 2/2011                              |
+|   \/ \/    | COPYRIGHT + venturewise.co                      |
+|______________________________________________________________|
+
+color: # 5d0e0e = red, # 065425 = green, # 05263f = dark blue, # 104870 = link blue
+
+*****************************************************/
+
+/** GLOBAL RESETS **/
+:link,:visited {text-decoration:none}
+h1,h2,h3,h4,h5,h6,pre,code {font-size:1em;font-weight:400;}
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin:0; padding:0}
+a img,:link img,:visited img {border:none}
+
+/** GLOBAL SETS **/
+.clear {clear:both;}
+body {
+	text-align:center;
+	font-family:tahoma,geneva,sans-serif;
+	font-size: 14px;
+	background: #072740 url(images/topback.jpg) top left repeat-x;
+	color:#222;
+	}
+.wrapper {
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	}
+	
+	
+/* HEADER */
+#header {
+	position:relative;
+	height:120px;
+	text-align:left;
+	}
+#header .logo{
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+	
+	}
+
+
+.tagline {display:block; padding-left:300px;padding-top: 65px; font-family:'Dancing Script',georgia;font-size:28px;	color:#666666;}
+
+
+
+/*Slide Show */
+
+#slideshow: {height: 250px; width: 500px;}
+#slideshow img { padding: 10px; border: 1px solid #ccc; background-color: #eee; top:0; left:0 }
+#slideshow img {-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+	
+}
+#slideshow li {list-style-type:none;}
+
+	
+	
+/* BODY */
+#contentwrapper {
+	
+	width:960px;
+	padding:10px;
+	}
+
+#bodycontent {
+	width:680px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	float:left;
+	text-align:left;
+	display:block;
+	background:#ffffff;
+	-webkit-border-radius: 8px;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-webkit-box-shadow: #000 0px 2px 3px;
+-moz-box-shadow: #000 0px 2px 3px;
+box-shadow: #000 0px 2px 3px;
+	behavior: url(http://binghamtoncommunityorchestra.org/PIE.htc);}
+	
+#bodycontent .post {padding:75px 0 50px 0;}
+#bodycontent .post h1 {
+	font-family:georgia,serif;
+	font-size:28px;
+	color:#0055A5;
+	line-height:38px;
+	margin:0 0 15px 0;
+	padding:0 0 15px 0;
+	border-bottom:#ccc 1px dotted;
+	text-weight:bold;
+	}
+	.post h1 a, .post h1 a:link, .post h1 a:visited {color:#104870;}
+	.post a:hover {
+		color:#05263f;
+		text-decoration:underline;
+		}
+	
+#bodycontent .post h2 {
+	font-family:'PT Sans',arial,sans-serif;	}
+	
+#bodycontent h1, h2 {
+	font-family:'PT Sans',arial,sans-serif;	}
+		
+#bodycontent .post p {
+	margin:0 0 18px 0;
+	line-height: 20px;
+	}
+
+	#bodycontent .post ul, #bodycontent .post ol {
+	margin:0 0 18px 25px;
+	line-height: 20px;
+	}
+	#bodycontent .post ul ul, #bodycontent .post ol ul, #bodycontent .post ul ol, #bodycontent .post ol ol {
+		margin:0 0 0 25px;
+	}
+	#bodycontent .post blockquote {
+	margin:0 0 18px 30px;
+	line-height: 19px;
+	font-size:13px;
+	color:#666;
+	font-style:italic;
+	}
+	#bodycontent .post code {
+	font-size:12px;
+	color:#666;
+	padding:2px;background:#fafafa;
+	border:1px solid #eee;
+	}
+	#bodycontent .post pre code {
+	display:block;
+	font-size:12px;
+	color:#666;
+	padding:8px;background:#fafafa;
+	border:1px solid #eee;
+	margin-bottom:18px;
+	}
+	#bodycontent .post h2 {
+	font-weight:bold;
+	padding:8px 0;
+	font-size:20px;
+	color: #05263f;
+	}
+	#bodycontent .post h3 {
+	font-weight:bold;
+	padding:8px 0;
+	font-size:17px;
+	color: #05263f;
+	}
+	#bodycontent .post h4 {
+	font-weight:bold;
+	padding:8px 0;
+	font-size:14px;
+	color: #05263f;
+	}
+	#bodycontent .post h2 a, #bodycontent .post h3 a, #bodycontent .post h3 a, #bodycontent .post h1 a {color: #104870;}
+	#bodycontent .post h2 a:hover, #bodycontent .post h3 a:hover, #bodycontent .post h3 a;hover, #bodycontent .post h1 a:hover {color: #05263f;}
+	
+	
+	#bodycontent .post .meta {
+		margin-top:20px;
+		font-size:11px;line-height:18px;
+		color:#555;
+		border:1px dotted #ccc;
+		background:#f9f9f9;
+		padding:8px;
+	}
+
+
+/* SIDEBAR */
+
+#sidebar {
+	width:220px;
+padding-right:20px;
+	float:left;
+	text-align:left;
+	font-size:13px;
+	display:block;
+	}
+	#sidebar .featured {
+	
+		padding:20px;
+		margin:0 0 30px 0;
+		color:#ffffff;
+		font-family: arial;
+		line-height:20px;
+
+
+	}
+	#sidebar .featured h2 {
+		font-family:georgia,serif;
+		font-size:16px;
+		line-height:22px;
+	padding:0 0 20px 0;
+		
+		}
+		#sidebar .featured h2 a, #sidebar .featured h2 a:visited{text-decoration:none;}
+		
+	#sidebar .featured p {
+		margin:0 0 17px 0;
+		}
+	
+	#sidebar ul, #sidebar ol {
+		margin:0 0 18px 30px;
+	}
+	#sidebar .featured a.par {
+	color : #104870;
+	text-decoration : none;
+}
+#sidebar a:link, #sidebar a:visited {
+		color:#104870;
+		text-decoration:none;
+		}
+	#sidebar a:hover {
+		color:#05263f;
+		text-decoration:none;
+		}
+		
+	#sidebar .featured a {
+		color:#104870;
+		text-decoration:none;
+		}
+	#sidebar .featured a:hover {
+		color:#05263f;
+		text-decoration:none;
+		}
+		#sidebar .button {height:48px;width:160px; background:#104870;
+	-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: #000 0px 2px 3px;
+-moz-box-shadow: #000 0px 2px 3px;
+box-shadow: #000 0px 2px 3px;
+	behavior: url(http://binghamtoncommunityorchestra.org/PIE.htc);
+	color: #fff; font-size: 16px;
+	font-family:'PT Sans',arial,;
+	margin-bottom:10px;
+	 text-align:center;padding-top:15px;}
+	#sidebar .button h1 {font-family:georgia,serif;}
+#sidebar .button a, #sidebar .button a:link, #sidebar .button a:visited, #sidebar .button a:hover {color:#ffffff; text-decoration:none;}	
+
+
+
+/* FOOTER */
+#footerwrapper {width:100%; height:360px; text-align: center;background:  url(images/bottomback.jpg) bottom left repeat-x; }
+
+#footer {
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	text-align:left;
+	line-height:18px;
+	font-size:12px;
+	color:#fff;
+	height: 360;
+	padding:1px 0 20px 0;
+	
+	}
+	#footer p.left-footer {text-align:left;float:left;width:450px;padding-top:25px;}
+	#footer p.right-footer {text-align:right;float:right;width:450px;padding-top:25px;}
+	
+	#footer a:link, #footer a:visited {
+		color:#ccc;
+		text-decoration:underline;
+		}
+	#footer a:hover {
+		color:#000;
+		text-decoration:underline;
+		}
+		#whitefootertext { width:920px;height:200px;
+color:#ccc;font-size:12px; line-height: 22px;
+padding:0px 30px 0px 30px;}
+
+		#whitefootertext a {color:#ccc;}
+		#whitefootertext a:link, #whitefootertext a:visited, #whitefootertext a:hover{color:#ccc;}
+		#whitefootertext h1 {color: #fff; font-size: 22px;
+	font-family:georgia,serif;}
+	#whitefootertext .mission {display:block; float:left;width:450px;padding-right:20px;border-right: #000000 solid 1px;}
+	#whitefootertext .social {display:block; float:left;width:350px;padding-left:20px; }
+		
